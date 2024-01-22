@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAFD">
+
+    <EditText
+        android:id="@+id/noteContent"
+        android:layout_width="308dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginBottom="82dp"
+        android:ems="10"
+        android:gravity="start|fill_vertical"
+        android:hint="CONTENT"
+        android:inputType="textMultiLine"
+        android:textColor="#130F0F"
+        app:layout_constraintBottom_toTopOf="@+id/addNoteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/addNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="295dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteContent"
+        app:srcCompat="@drawable/addnote" />
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="TITLE"
+        android:inputType="text"
+        android:textColor="#1E1717"
+        app:layout_constraintBottom_toTopOf="@+id/noteContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
